@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سنگ، کاغذ قیچی</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body dir="rtl">
+    <main>
+        <div id="game">
+            <div id="dashboard">
+                <h2>سنگ، کاغذ، قیچی!</h2>
+                <h1 id="pcScore"></h1>
+                <button id="resetBtn" onclick="reset()">بازی از اول</button>
+                <h1 id="userScore"></h1>
+                <img src="img/hand1.png" alt="">
+                <img src="img/hand2.png" alt="">
+            </div> 
+            <div id="gamePlay">
+                <div id="panelComputer">
+                    <h1></h1>
+                </div>  
+                <div id="gameScene">
+                    <div class="selection" id="computerSelect"></div>
+                    <div id="notice"></div>
+                    <div class="selection" id="userSelect"></div>
+                </div>
+                <div id="panelUser">
+                    <div id="zone"></div>
+                    <div id="hands">
+                            <img class="choosenHand" id="rock" src="img/rock.png" alt="">
+                            <img class="choosenHand" id="scissors" src="img/scissors.png" alt="">
+                            <img class="choosenHand" id="paper" src="img/paper.png" alt="">
+                    </div>
+                </div>  
+   
+            </div>
+
+        </div>
+            <div id="footer">
+                <h1>طراح و توسعه دهنده: حامد مرادی</h1>
+                <a href="https://instagram.com/hamed.moradi.dev">اینستاگرام من</a>
+                <a href="https://github.com/hamedmoradidev">گیت هاب من</a>
+                <a href="https://www.linkedin.com/in/hamed-moradi-38420956/">لینکداین من</a>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
