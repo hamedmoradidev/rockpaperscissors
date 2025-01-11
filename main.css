@@ -8,6 +8,19 @@
     padding: 0;
     font-family: myFont;
 }
+@keyframes turnAnimation1{
+    to{
+        border: 15px solid rgb(16, 221, 16);
+    }
+}
+@keyframes turnAnimation2{
+    to{
+        border-bottom: 10px solid rgb(255, 255, 255);
+    }
+}
+
+
+
 body{
     height: 100vh;
     overflow: hidden;
@@ -85,7 +98,6 @@ body{
                     margin-top: 20px;
                     width: 90%;
                     height: 150px;
-                    border: 5px solid indianred;
                     border-radius: 90% 10% 85% 15% / 10% 86% 14% 90% ;
                     background-color: rgba(255, 255, 255, 0.9);
                     display: flex;
@@ -101,10 +113,14 @@ body{
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+            
+                    height: 50px;
                         >img{
                             position: absolute !important;
                             height: 70px !important;
                             cursor: pointer !important;
+                            border-bottom: 10px solid transparent;
+                            width: 35px;
                             &:nth-of-type(1){
                                 bottom: 100px;
                                 left: 2%;
@@ -197,4 +213,21 @@ body{
         color:coral;
     }
 }
+
+.userTurn1{
+    animation-name: turnAnimation1;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.userTurn2{
+    animation-name: turnAnimation2;
+    animation-duration: 0.5s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+
+}
+
 

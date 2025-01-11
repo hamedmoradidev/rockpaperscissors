@@ -69,6 +69,10 @@ function game(){
             computerSelectionValue="paper";
             break;       
     }
+    choosenHand.forEach((val)=>{
+        val.classList.add("userTurn2")
+    })
+    zone.classList.add("userTurn1")
 
     console.log(randomNumber)
     choosenHand.forEach((val) => {
@@ -96,6 +100,11 @@ function game(){
         document.removeEventListener('mousemove', mouseMove)
         if(e.clientY < zoneBottom){
         zone.appendChild(e.target)
+        choosenHand.forEach((val)=>{
+            val.classList.remove("userTurn2")
+        })
+        zone.classList.remove("userTurn1")
+        
         userSelectionValue=zone.children[0].getAttribute("id")
         console.log(zone.children[0].getAttribute("id"))
         userTurn()
